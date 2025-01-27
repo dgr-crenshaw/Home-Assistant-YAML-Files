@@ -77,12 +77,13 @@ esp32_camera:
   agc_value: 0
   # white balance setting
   wb_mode: auto
+
 output:
 # white LED
   - platform: ledc
     channel: 2
     pin: GPIO4
-    id: testCameraLED
+    id: testCamLED
 # red status light
   - platform: gpio
     pin:
@@ -91,7 +92,7 @@ output:
     id: gpio_33
 light:
   - platform: monochromatic
-    output: testCameraLED
+    output: testCamLED
     name: test-cam light
   - platform: binary
     output: gpio_33
