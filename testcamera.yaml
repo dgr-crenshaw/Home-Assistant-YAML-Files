@@ -1,8 +1,5 @@
-# validates 01-25-2025 10:05
-# compiled but connection failed for upload 01-25-25 10:15
-# cam module reset 01-25-25 10:21
-# verticle flip: false -- now in case 01-25-2025 15:37
-
+# validates for new camera 02-12-2025 13:24
+# flip true for naked board test 02-12-14:33
 
 esphome:
   name: testcamera
@@ -61,7 +58,7 @@ esp32_camera:
   jpeg_quality: 10  # max. 63
   max_framerate: 1.0fps
   idle_framerate: 0.2fps
-  vertical_flip: false
+  vertical_flip: true
   horizontal_mirror: false
   brightness: 2 # -2 to 2
   contrast: 1 # -2 to 2
